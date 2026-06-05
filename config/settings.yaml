@@ -1,0 +1,80 @@
+# AGD 2026 — Project Configuration
+# All paths are relative to the project root (agd2026-team/)
+
+project:
+  name: "SPE Africa Geothermal Datathon 2026"
+  team_role: "AI Workflow Engineer"
+  submission_deadline: "2026-06-04"
+
+paths:
+  data:
+    raw:         "data/raw"
+    external:    "data/external"
+    economic:    "data/economic"
+    processed:   "data/processed"
+    interim:     "data/interim"
+  outputs:
+    figures:     "outputs/figures"
+    models:      "outputs/models"
+    reports:     "outputs/reports"
+
+wells:
+  all: ["BLT-01", "EVD-01", "JUT-01", "PKP-01"]
+  deviated: ["JUT-01"]        # requires MD → TVD conversion
+  target_formation: "Rotliegend"
+
+data_files:
+  las_pattern:      "data/raw/*.las"
+  lithostratigraphy: "data/external/Lithostratigraphic Data.xlsx"
+  well_path:        "data/external/Well Path Data.xlsx"
+  thermogis:        "data/external/ThermoGIS Data.xlsx"
+  target_litho:     "data/external/target_lithologies.csv"
+  lcoe_model:       "data/economic/LCOE.xlsx"
+
+# LAS null sentinel value
+las_null: -999.25
+
+# Petrophysical constants
+petrophysics:
+  rho_matrix_gcc: 2.65     # g/cc quartz sandstone
+  rho_fluid_gcc:  1.00     # g/cc water
+  cp_water_kj_kgk: 4.18   # kJ/(kg·K)
+
+# Feasibility scoring weights (must sum to 1.0)
+feasibility_weights:
+  flow_rate:    0.30
+  temperature:  0.25
+  permeability: 0.20
+  thickness:    0.10
+  distance:     0.10
+  depth:        0.05
+
+# Challenge targets
+targets:
+  heat_mwth:    10.0       # minimum heating output required
+  cooling_mwth: 5.0        # minimum cooling output required
+
+# Economic defaults
+economics:
+  discount_rate:        0.07
+  lifetime_years:       30
+  well_cost_eur_per_m:  3500
+  surface_capex_eur:    3000000
+  opex_fraction:        0.03
+  reinj_temp_c:         40.0
+  cop_heating:          4.0
+  cop_cooling:          3.5
+  fraction_for_cooling: 0.30
+
+# Model hyperparameters
+models:
+  xgboost:
+    n_estimators:  300
+    max_depth:     5
+    learning_rate: 0.05
+  quantiles: [0.10, 0.50, 0.90]
+
+# Anthropic API
+ai_workflow:
+  model: "claude-sonnet-4-20250514"
+  max_tokens: 1500

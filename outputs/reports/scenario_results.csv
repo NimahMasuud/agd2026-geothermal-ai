@@ -1,0 +1,4 @@
+Scenario,Well,Flow Rate (m³/h),Prod Temp (°C),Heat Output (MWth),Cooling Output (MWth),Gross Geo Power (kW),CAPEX (M€),Annual OPEX (k€),LCoE Heat (€/GJ),LCoE Blended (€/GJ),NPV (M€),Payback (yrs),Meets Heat Target,Meets Cooling Target
+P90 — Low,BLT-01,17.0,77.0,0.682,0.767,730.3,15.86,475.8,85.83,40.4,-12.41,57.1,False,False
+P50 — Base,BLT-01,105.0,77.0,4.21,4.736,4510.9,15.86,475.8,13.9,6.54,35.95,3.8,False,False
+P10 — High,BLT-01,469.0,77.0,18.806,21.156,20148.8,15.86,475.8,3.11,1.46,236.04,0.8,True,True

@@ -1,0 +1,51 @@
+{
+  "well_id": "JUT-01",
+  "assessment_date": "2026-06-05",
+  "data_quality": {
+    "rating": "MODERATE",
+    "completeness_pct": 60,
+    "key_issues": [
+      "Missing NPHI, DTS, and resistivity logs"
+    ],
+    "imputation_required": [
+      "NPHI, permeability"
+    ]
+  },
+  "petrophysical_interpretation": {
+    "lithology_description": "Rotliegend sandstone",
+    "porosity_assessment": "Unknown due to missing NPHI log",
+    "net_reservoir_quality": "MODERATE",
+    "key_observations": [
+      "Deviated well, potential for improved reservoir understanding with additional data"
+    ]
+  },
+  "reservoir_potential": {
+    "permeability_assessment": "Unknown due to missing data, but flow rate suggests potential viability",
+    "flow_capacity_assessment": "Marginally viable, with P50 flow rate of 55 m3/h",
+    "thermal_energy_conclusion": "Temperature of 72 C is viable, but heat output of 2.04 MWth is below target",
+    "meets_heat_target": false,
+    "meets_cooling_target": false,
+    "confidence_level": "LOW"
+  },
+  "risk_register": [
+    {
+      "risk": "Insufficient data for accurate reservoir characterization",
+      "severity": "HIGH",
+      "mitigation": "Acquire additional logging data"
+    },
+    {
+      "risk": "Low heat output",
+      "severity": "MEDIUM",
+      "mitigation": "Consider well stimulation or additional wells"
+    }
+  ],
+  "recommendation": {
+    "action": "INVESTIGATE_FURTHER",
+    "rationale": "While the well shows some promise, the lack of data and low heat output make it necessary to gather more information before making a development decision",
+    "next_steps": [
+      "Acquire additional logging data, including NPHI and DTS",
+      "Re-evaluate reservoir potential with updated data"
+    ],
+    "priority_rank": 3
+  }
+}

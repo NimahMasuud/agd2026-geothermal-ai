@@ -1,0 +1,5 @@
+Well,Action,Priority,Meets Heat Target,Meets Cool Target,Confidence,Data Quality,Rationale
+BLT-01,INVESTIGATE_FURTHER,2,False,False,MEDIUM,GOOD,"While BLT-01 shows promising petrophysical properties, its heat output of 4.51 M..."
+EVD-01,INVESTIGATE_FURTHER,3,False,False,LOW,MODERATE,"while permeability and temperature are viable, the flow rate is not sufficient t..."
+JUT-01,INVESTIGATE_FURTHER,3,False,False,LOW,MODERATE,"While the well shows some promise, the lack of data and low heat output make it ..."
+PKP-01,INVESTIGATE_FURTHER,3,False,False,LOW,MODERATE,"while permeability and temperature are viable, flow rate is not, and data qualit..."

@@ -1,0 +1,48 @@
+{
+  "well_id": "BLT-01",
+  "assessment_date": "2026-06-05",
+  "data_quality": {
+    "rating": "GOOD",
+    "completeness_pct": 100,
+    "key_issues": [],
+    "imputation_required": []
+  },
+  "petrophysical_interpretation": {
+    "lithology_description": "Rotliegend sandstone",
+    "porosity_assessment": "Moderate porosity of 0.1429, indicating potential for fluid flow",
+    "net_reservoir_quality": "GOOD",
+    "key_observations": [
+      "High permeability values",
+      "Suitable porosity for geothermal application"
+    ]
+  },
+  "reservoir_potential": {
+    "permeability_assessment": "Permeability of 752.1 mD (P50) exceeds the viability threshold of 50 mD",
+    "flow_capacity_assessment": "Flow rate of 105 m3/h (P50) exceeds the viability threshold of 50 m3/h",
+    "thermal_energy_conclusion": "Temperature of 77 C (P50) exceeds the viability threshold of 70 C",
+    "meets_heat_target": false,
+    "meets_cooling_target": false,
+    "confidence_level": "MEDIUM"
+  },
+  "risk_register": [
+    {
+      "risk": "Insufficient heat output",
+      "severity": "MEDIUM",
+      "mitigation": "Consider combining with other wells or alternative heating solutions"
+    },
+    {
+      "risk": "Distance to district",
+      "severity": "LOW",
+      "mitigation": "Assess pipeline costs and feasibility"
+    }
+  ],
+  "recommendation": {
+    "action": "INVESTIGATE_FURTHER",
+    "rationale": "While BLT-01 shows promising petrophysical properties, its heat output of 4.51 MWth falls short of the target of 10 MWth. Further investigation into combining with other wells or alternative heating solutions is necessary",
+    "next_steps": [
+      "Assess nearby wells for potential combination",
+      "Evaluate alternative heating solutions"
+    ],
+    "priority_rank": 2
+  }
+}

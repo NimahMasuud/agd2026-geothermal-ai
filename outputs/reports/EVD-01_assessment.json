@@ -1,0 +1,53 @@
+{
+  "well_id": "EVD-01",
+  "assessment_date": "2026-06-05",
+  "data_quality": {
+    "rating": "MODERATE",
+    "completeness_pct": 60,
+    "key_issues": [
+      "missing curves: dts_usft, rd_ohmm, rm_ohmm, rs_ohmm"
+    ],
+    "imputation_required": [
+      "dts_usft"
+    ]
+  },
+  "petrophysical_interpretation": {
+    "lithology_description": "Rotliegend sandstone",
+    "porosity_assessment": "low to moderate porosity",
+    "net_reservoir_quality": "MODERATE",
+    "key_observations": [
+      "low mean porosity of 0.1058",
+      "variable GR and RHOB responses"
+    ]
+  },
+  "reservoir_potential": {
+    "permeability_assessment": "permeability is viable with P50 of 519.12 mD",
+    "flow_capacity_assessment": "flow rate is not viable with P50 of 0.0 m3/h",
+    "thermal_energy_conclusion": "temperature is viable with P50 of 72.0 C",
+    "meets_heat_target": false,
+    "meets_cooling_target": false,
+    "confidence_level": "LOW"
+  },
+  "risk_register": [
+    {
+      "risk": "insufficient flow rate",
+      "severity": "HIGH",
+      "mitigation": "further investigation of well completion and stimulation options"
+    },
+    {
+      "risk": "data quality issues",
+      "severity": "MEDIUM",
+      "mitigation": "acquisition of missing curves and data validation"
+    }
+  ],
+  "recommendation": {
+    "action": "INVESTIGATE_FURTHER",
+    "rationale": "while permeability and temperature are viable, the flow rate is not sufficient to meet the heat and cooling targets, and data quality issues need to be addressed",
+    "next_steps": [
+      "acquire missing curves",
+      "investigate well completion and stimulation options",
+      "re-evaluate reservoir potential"
+    ],
+    "priority_rank": 3
+  }
+}
