@@ -1,22 +1,27 @@
-# AGD 2026 — AI Workflow Engineer Codebase
+# SPE Africa Geothermal Datathon 2026: Techno-Economic & AI Workflow Assessment
 
-**SPE Africa Geothermal Datathon 2026**
+**Team Name:** Thermal Edge Geo AI
+
 **Role:** Team Lead & AI Workflow Engineer
-**Submission deadline:** June 4, 2026
+
+**Submission Deadline:** June 7, 2026
 
 ---
 
 ## Project Overview
 
-This repository implements the complete AI engineering workflow for assessing
-geothermal potential of Rotliegend sandstone wells near Utrecht, Netherlands.
+This repository implements a production-grade AI engineering workflow to evaluate the deep geothermal heating and cooling potential of the Rotliegend Sandstone formations near Utrecht, Netherlands.
 
-**Core question:** Can well(s) in the dataset supply ≥10 MWth heating and ≥5 MWth
-cooling to a Utrecht urban district?
+### Core Engineering Requirements
 
-**Answer:** Yes — **BLT-01** is the primary candidate with a feasibility score of
-**62.9/100 (VIABLE)**, estimated heat output of **20 MWth** at P50, and flow rate
-of **105 m³/h**.
+- **Heating Capacity Target:** Deliver a sustained thermal throughput of ≥10 MWth to an urban district
+- **Cooling Capacity Target:** Deliver a sustained cooling throughput of ≥5 MWth
+
+### Primary Asset Determination
+
+- **Selected Candidate:** BLT-01 is identified as the primary viable asset
+- **Feasibility Evaluation:** Achieved a composite score of 62.9/100 (VIABLE)
+- **Production Profile:** Delivers an estimated thermal output of 20 MWth at P50 with an operational flow rate of 105 m³/h
 
 ---
 
@@ -31,6 +36,20 @@ of **105 m³/h**.
 
 ---
 
+## Technical Report
+
+The full technical report is included in this repository as `ThermalEdge_Technical_Report.docx`. It covers the complete project narrative including all methodology, results and recommendations across eight sections:
+
+1. **Executive Summary** — strategic motivation and system overview
+2. **Methodology and Assumptions** — geothermal gradient, COP, recovery factor
+3. **External Data and GIS Mapping** — ThermoGIS and OpenStreetMap spatial analysis
+4. **Reservoir Assessment (Challenge 1)** — preliminary and AI-optimised well evaluation for BLT-01, EVD-01, JUT-01 and PKP-01
+5. **Integrated Surface System Design (Challenge 2)** — heat pumps, absorption chillers, TES sizing and energy balance
+6. **AI-Assisted Workflow (Bonus Challenge)** — XGBoost imputation, feasibility scoring and LLM-generated well reports
+7. **Economic Evaluation** — LCoE of €28.53/MWhth, CAPEX €11.72M, sensitivity and Tornado analysis
+8. **Conclusion and Recommendations** — BLT-01 confirmed as primary development candidate
+
+---
 ## Quickstart
 
 ### Step 1 — Clone and enter the repo
