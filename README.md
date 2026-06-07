@@ -186,12 +186,15 @@ agd2026-team/
 │   ├── figures/          ← All saved plots
 │   ├── models/           ← Saved .pkl model files
 │   └── reports/          ← Scenario tables, AI assessment reports
+├── docs/
+│   └── index.html        ← Interactive scenario dashboard (GitHub Pages)
 ├── tests/
 │   └── test_pipeline.py  ← pytest test suite
 ├── config/
 │   └── settings.yaml     ← All paths and hyperparameters
 ├── requirements.txt
 ├── environment.yml
+├── ThermalEdge_GeoAI_Technical_Report.docx  ← Full technical report
 └── README.md
 ```
 
